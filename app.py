@@ -10,7 +10,7 @@ def welcome_text():
 
 @app.get("/randomQuote")
 def get_random_quote():
-    return quotes[random.randint(0,100)]
+    return quotes[random.randint(0,10)]
 
 if __name__ == "__main__":
     app.run()
